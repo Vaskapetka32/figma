@@ -1,49 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pattern Brands</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header>
-    <nav>
-      <a href="#">Blog</a>
-      <a href="#">Press</a>
-      <a href="#">Join Us</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Founder's Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  <main>
-    <section class="hero">
-      <h1>For founders on<br>building, growing, and<br>selling your brand.</h1>
-      <p>Explore the brands joining Pattern Brands, the sales process & the founders behind them.</p>
-    </section>
+  <body>
 
-    <section class="cards">
-      <a href="#" class="card"><img src="https://via.placeholder.com/300x200" alt=""><p>GIF: One Year In</p></a>
-      <a href="#" class="card"><img src="https://via.placeholder.com/300x200" alt=""><p>Introducing Onsen</p></a>
-      <a href="#" class="card"><img src="https://via.placeholder.com/300x200" alt=""><p>Selling Your Shopify Store</p></a>
-      <a href="#" class="card"><img src="https://via.placeholder.com/300x200" alt=""><p>5 Reasons We Are Optimistic</p></a>
-      <a href="#" class="card"><img src="https://via.placeholder.com/300x200" alt=""><p>Why Right Now is a Great Time</p></a>
-      <a href="#" class="card"><img src="https://via.placeholder.com/300x200" alt=""><p>Selling Your Shopify Store Again</p></a>
-      <a href="#" class="card"><img src="https://via.placeholder.com/300x200" alt=""><p>Pattern 2022 Updates</p></a>
-      <a href="#" class="card"><img src="https://via.placeholder.com/300x200" alt=""><p>Introducing Yield</p></a>
-      <a href="#" class="card"><img src="https://via.placeholder.com/300x200" alt=""><p>Introducing Poketo</p></a>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-content">
-      <p>We're focused on building brands and a better future.<br>If you'd like to partner with us, we're here to talk.</p>
-      <div class="footer-links">
-        <div><strong>Contact</strong><br>info@patternbrands.com</div>
-        <div><strong>Social</strong><br>Twitter<br>Instagram</div>
-        <div><strong>Address</strong><br>New York, NY</div>
+    <!-- 🔹 Навигационная панель -->
+    <nav class="topbar">
+      <div class="topbar-wrapper">
+        <div class="menu-links">
+          <a href="#">Blog</a>
+          <a href="#">Press</a>
+          <a href="#">Join Us</a>
+        </div>
       </div>
-    </div>
-    <p class="copyright">© 2025 Pattern Brands</p>
-  </footer>
-</body>
+    </nav>
+
+    <!-- 🔹 Заголовок страницы / Хиро-блок -->
+    <header class="hero-section">
+      <div class="hero-text">
+        <h4 class="tagline">BUSINESS THOUGHTS 💭</h4>
+        <h1 class="headline">For founders on building, growing,<br>and selling your brand.</h1>
+        <p class="subtitle">
+          Discover stories of brands joining Pattern, their journey, and the people behind them. <span class="emoji">👇</span>
+        </p>
+      </div>
+    </header>
+
+    <!-- 🔹 Карточки блога -->
+    <section class="articles-grid">
+      <div class="grid-wrapper">
+
+        <!-- 🖼 Блок карточек (пример 1 из 9) -->
+        <div class="card">
+          <img src="img/IMAGE.png" alt="GIR: One Year In" />
+          <h3>GIR: One Year In</h3>
+          <p class="label">Case Study</p>
+        </div>
+
+        <div class="card">
+          <img src="img/IMAGE (1).png" alt="Introducing Onsen" />
+          <h3>Introducing Onsen</h3>
+          <p class="label">New Additions</p>
+        </div>
+
+        <div class="card">
+          <img src="img/IMAGE (2).png" alt="Selling Your Shopify Brand" />
+          <h3>Selling Your Shopify Brand</h3>
+          <p class="label">M&A 101</p>
+        </div>
+
+        <div class="card">
+          <img src="img/IMAGE (3).png" alt="5 Reasons We're Optimistic" />
+          <h3>5 Reasons We're Optimistic</h3>
+          <p class="label">Strategy</p>
+        </div>
+
+        <div class="card">
+          <img src="img/IMAGE (4).png" alt="Right Time to Sell" />
+          <h3>Why Now is a Great Time to Sell</h3>
+          <p class="label">Insights</p>
+        </div>
+
+        <div class="card">
+          <img src="img/IMAGE (5).png" alt="Selling Shopify Week 1" />
+          <h3>Selling Shopify: Week 1</h3>
+          <p class="label">Series</p>
+        </div>
+
+        <div class="card">
+          <img src="img/IMAGE (6).png" alt="Pattern Update" />
+          <h3>Pattern’s 2022 Recap</h3>
+          <p class="label">Highlights</p>
+        </div>
+
+        <div class="card">
+          <img src="img/IMAGE (7).png" alt="Introducing Yield" />
+          <h3>Introducing Yield</h3>
+          <p class="label">Launch</p>
+        </div>
+
+        <div class="card">
+          <img src="img/IMAGE (8).png" alt="Poketo" />
+          <h3>Introducing Poketo</h3>
+          <p class="label">Launch</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔹 Нижняя часть сайта / Подвал -->
+    <footer class="site-footer">
+      <div class="footer-main">
+        <h5>Let’s Connect</h5>
+        <p>We build future-friendly brands. Interested in working together?</p>
+        <p>Drop us a message — we’re <a href="#">ready to chat</a>.</p>
+
+        <!-- 🔸 Ссылки: бренды, соцсети, контакты -->
+        <div class="footer-columns">
+
+          <div class="footer-block">
+            <ul>
+              <li><a href="#">Open Spaces</a></li>
+              <li><a href="#">GIR</a></li>
+              <li><a href="#">Yield</a></li>
+              <li><a href="#">Poketo</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-block">
+            <ul>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-block">
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-block">
+            <p>228 Park Ave S</p>
+            <p>New York, NY 10003</p>
+            <a href="mailto:acquisitions@patternbrands.com">
+              acquisitions@patternbrands.com
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">© 2025 Pattern Brands</p>
+    </footer>
+
+  </body>
 </html>
