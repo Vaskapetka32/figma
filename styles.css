@@ -1,0 +1,224 @@
+
+/* 🌐 Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fefcf0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 🔝 Навигация */
+.topbar {
+  background-color: #fefbf1;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.topbar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-links a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #703412;
+  font-weight: bold;
+}
+
+.menu-links a:hover {
+  color: gray;
+}
+
+/* 🎯 Хиро-секция */
+.hero-section {
+  padding: 80px 20px;
+}
+
+.hero-text .tagline {
+  margin-bottom: 10px;
+  color: #703412;
+  font-size: 12px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+.hero-text .headline {
+  font-size: 64px;
+  font-weight: 700;
+  color: #703412;
+  line-height: 1.2;
+  max-width: 880px;
+  margin: 20px 0;
+}
+
+.hero-text .subtitle {
+  font-size: 24px;
+  color: #703412;
+  max-width: 580px;
+  line-height: 1.5;
+}
+
+.emoji {
+  font-size: 32px;
+}
+
+/* 🗂 Сетка карточек */
+.articles-grid {
+  padding: 100px 20px;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card {
+  text-align: center;
+  padding: 10px;
+}
+
+.card img {
+  width: 100%;
+  max-width: 312px;
+  height: 312px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #703412;
+  text-align: left;
+  margin: 20px 0 5px 10px;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  margin-left: 10px;
+  color: rgba(112, 52, 18, 0.72);
+}
+
+/* 🦶 Футер */
+.site-footer {
+  background-color: #2c6b4f;
+  color: white;
+  padding: 50px 20px;
+}
+
+.footer-main {
+  margin-left: 5%;
+}
+
+.footer-main h5 {
+  font-size: 14px;
+  letter-spacing: 1.6px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-main p {
+  font-size: 24px;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 40px;
+}
+
+.footer-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-block li {
+  margin: 8px 0;
+}
+
+.footer-block a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-block a:hover {
+  color: #ffc107;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info p, .contact-info a {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.6;
+}
+
+.contact-info a:hover {
+  color: #ffb300;
+}
+
+.copyright {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* 📱 Адаптивность */
+@media screen and (max-width: 768px) {
+  .grid-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text .headline {
+    font-size: 36px;
+  }
+
+  .hero-text .subtitle {
+    font-size: 18px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .topbar-wrapper {
+    flex-direction: column;
+  }
+
+  .menu-links a {
+    margin: 10px;
+  }
+
+  .hero-text .headline {
+    font-size: 28px;
+  }
+
+  .hero-text .subtitle {
+    font-size: 16px;
+  }
+}
